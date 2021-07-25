@@ -2,8 +2,6 @@ import sqlite3
 import sys, traceback
 import re
 
-#Change connect(thisthing) to exercise.db when testing is complete
-# conn = sqlite3.connect(':memory:')
 conn = sqlite3.connect('workout_tracker.db')
 conn.execute("PRAGMA foreign_keys = 1")
 c = conn.cursor()
